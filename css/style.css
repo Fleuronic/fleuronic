@@ -1,0 +1,14 @@
+.logo {
+	z-index: 10;
+}
+
+.home-img {
+	position: absolute;
+	bototm: 0;
+	right: 0;
+	height: 110%;
+}
+
+.navigation {
+	display: none;
+}

@@ -1,0 +1,12 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\njanet index.janet"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nspeakeasy\nnpx tailwindcss -i .\/css\/input.css -o .\/css\/output.css -c .\/js\/tailwind.config.js"
+    }
+  }
+}
