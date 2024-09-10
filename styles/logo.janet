@@ -1,9 +1,7 @@
 (smuggle ./util/element)
 
-(def logo (element :div ~[
-	:font medium
-	:text "4xl"
-	:top 6
-	:left 28
-	:absolute
-	:z 10]))
+(def logo 
+	(element :div ~[
+		:top 6 :left 28 :z 10
+		:font medium :text "4xl"
+		:absolute]))
