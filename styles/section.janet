@@ -1,7 +1,7 @@
 (smuggle ./util/element)
 
-(def section (element :section [
+(def section (element :section ~[
 	:flex
-	:h 'screen
-	:items 'center
+	:h screen
+	:items center
 	:p 16]))
