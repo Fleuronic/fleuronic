@@ -1,2 +1,4 @@
 .DS_Store
+*/*.html
+/css/input.css
 /node_modules
