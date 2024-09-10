@@ -1,9 +1,10 @@
+(smuggle ./styles/context)
 (smuggle ./util/element)
+(smuggle ./util/color)
 
 (def button 
-	(element :a ~[
-		:p 4 :my 2
-		:bg red-500 :hover:bg red-600
-		:text white
-		:cursor pointer
-		:inline-block :no-underline]))
+	(element :a 
+		(background :dark) ~(
+			:p 4 :my 2
+			:cursor pointer
+			:inline-block :no-underline)))
