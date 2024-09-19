@@ -1,0 +1,2 @@
+(def pointer ~(
+	:cursor pointer))

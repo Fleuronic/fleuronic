@@ -1,0 +1,1 @@
+(def center ~(:justify center))

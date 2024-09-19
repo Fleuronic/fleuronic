@@ -1,4 +1,4 @@
-(defn element [name & entries]
+(defn using [entries]
 	(var key nil)
 	(var path @[])
 	(var trimmed-path @[])
@@ -6,10 +6,11 @@
 		(if (keyword? entry) (set key entry))
 		(cond 
 			(= key entry) (array/push path (string entry))
-			(array/push path (string key "-" entry))))
-	(each component (reverse path)
+			(array/push path (string key "/" entry ".janet"))))
+		(each component (reverse path)
 		(if (empty? trimmed-path)
 			(array/push trimmed-path component)
 			(if (not (string/has-prefix? component (last trimmed-path)))
 				(array/push trimmed-path component))))
-	(keyword (string/join [name (splice (reverse trimmed-path))] ".")))
+	(each dep (reverse trimmed-path)
+		(eval-string (slurp dep))))

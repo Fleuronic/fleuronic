@@ -1,20 +1,12 @@
-(smuggle ./styles/logo)
-(smuggle ./util/list)
-(smuggle ./util/icon)
-(smuggle ./util/navigation)
+(using ~(
+	:components logo toggle navigation list bar icon
+	:resources strings))
 
 (def header [
-	[logo "Fleuronic"]
-	[:div.toggle]
-	[:div.navigation.hidden
-		(list nav-item {
-			:home "Home"
-			:services "Services"
-			:work "Work"
-			:contact "Contact"})
-		[:div.social
-  		(list icon {
-				:facebook "https://facebook.com"
-				:twitter "https://twitter.com"
-				:instagram "https://instagram.com"})]
-  		(email-icon "jordan@fleuronic.com")]])
+	[toggle]
+	[navigation
+		(list nav-item
+			[:home :services :work :contact])
+		[social-bar
+  		(list icon [:facebook :twitter :instagram])
+  		(email-icon email)]]])

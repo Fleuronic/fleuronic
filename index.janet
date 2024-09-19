@@ -1,11 +1,13 @@
-(defn smuggle* [filename] (eval-string (string "(use speakeasy)\n" (slurp filename))))
-(defmacro smuggle [module] ~(smuggle* ,(string module ".janet")))
+(use speakeasy)
+(eval-string (slurp "dependencies.janet"))
 
-(smuggle ./components/header)
-(smuggle ./sections/home)
-(smuggle ./styles/section)
-(smuggle ./util/layout)
+(using ~(
+	:util layout element color
+	:resources colors strings
+	:components header body section
+	:sections home))
   
-(layout "Fleuronic"
-  [:header header]
-  [section home])
+(let [title company]
+	(layout title default-body
+		[:header header] 
+		[section home]))
