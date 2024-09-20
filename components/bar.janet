@@ -1,5 +1,5 @@
 (using ~(
-	:styles flex center,
+	:styles flex center
 	:resources metrics))
 
 (def social-bar

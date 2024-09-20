@@ -1,5 +1,5 @@
 (def content
-	(element :div ~(
+	(element :div [
 		:relative
-		,back
-		:max-w ,medium)))
+		back
+		:max-w medium]))
