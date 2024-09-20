@@ -7,7 +7,7 @@
 (def margin [:my 6])
 (def inset [:p 12])
 (def padding [:px 8 :py 3])
-(def gap [:space-y 2])
+(def gap [:space-y 3])
 (def back [:z 10])
 (def front [:z 20])
 (def frontmost [:z 30])
