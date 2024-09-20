@@ -4,4 +4,5 @@
 		(background :dark) ~(
 		:rounded full
 		:inline-block 
-		:no-underline) pointer))
+		:no-underline) 
+		pointer))
