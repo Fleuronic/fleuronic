@@ -5,6 +5,6 @@
 (def home [
 	[hero {:src "images/home-img.jpg"}]
 	[content
-		[heading (splice tagline)]
+		[heading ;tagline]
 		[paragraph description]
 		[button {:href "contact.html"} prompt]]])

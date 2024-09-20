@@ -1,18 +1,19 @@
-(using ~(
-	:styles corner,
-	:resources metrics))
+(using ~(:resources metrics))
 
 (def link 
 	(element :a ~(
-		:text link ,over-light-background
+		:text ,largest ,over-light-background
 		:hover:text ,(color tint)
 		:font light
 		:no-underline)))
 
 (def site-link
 	(element :a ~(
-		:inline-block) scaled-down))
+		:inline-block) 
+		scaled-down))
 	
 (def corner-link
-	(element :a 
-		corner scaled-down))
+	(element :a ~(
+		:absolute) 
+		anchor 
+		scaled-down))

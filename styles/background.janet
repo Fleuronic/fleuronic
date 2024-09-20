@@ -1,3 +1,5 @@
+(using ~(:resources metrics))
+
 (defn background [& flags] ~(
 	:bg ,(color tint)
 	:hover:bg ,(color tint :darkened)
@@ -6,4 +8,4 @@
 		(index-of :dark flags) over-dark-background)))
 
 (defn background-icon [& icons] ~(
-	:bg ,(splice icons) icon-size no-repeat center))
+	:bg ,;icons icon-size no-repeat center))

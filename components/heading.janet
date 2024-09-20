@@ -1,5 +1,5 @@
 (def heading 
 	(element :h ~(
-		:text "3xl"
+		:text ,large
 		:font medium
 		:leading relaxed)))

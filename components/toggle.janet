@@ -5,6 +5,8 @@
 (def toggle 
 	(element :div.toggle ~(
 		:fixed
-		:top 0 :right 0 :z 30) square
+		:top 0 :right 0) frontmost
+		square-size
 		(background :dark)
-		(background-icon 'toggle 'close) pointer))
+		(background-icon 'toggle 'close) 
+		pointer))

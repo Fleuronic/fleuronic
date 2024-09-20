@@ -12,4 +12,4 @@
 			(array/push trimmed-path component)
 			(if (not (string/has-prefix? component (last trimmed-path)))
 				(array/push trimmed-path component))))
-	(keyword (string/join [name (splice (reverse trimmed-path))] ".")))
+	(keyword (string/join [name ;(reverse trimmed-path)] ".")))

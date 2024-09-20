@@ -2,4 +2,4 @@
 
 (def paragraph
 	(element :p ~(
-		:text lg) margin))
+		:text ,medium) margin))
