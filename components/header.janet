@@ -3,7 +3,7 @@
 	:resources strings))
 
 (def header [
-	[toggle]
+	[logo {:src "images/logo.png"}] [toggle]
 	[navigation
 		(list nav-item
 			[:home :services :portfolio :contact])

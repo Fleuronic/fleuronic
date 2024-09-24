@@ -1,8 +1,7 @@
 (def button 
-	(element :a 
+	(element :a
 		padding
-		(background :dark) ~(
-		:rounded full
-		:inline-block 
-		:no-underline) 
+		(background :dark)
+		:rounded 'full
+		:no-underline
 		pointer))

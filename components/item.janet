@@ -3,10 +3,10 @@
 	:util capitalize))
 
 (def list-item 
-	(element :li ~(
+	(element :li
 		:relative
-		:text center
-		:list none)))
+		:text 'center
+		:list 'none))
 
 (defn nav-item [page]
 	(def title (capitalize (string page)))

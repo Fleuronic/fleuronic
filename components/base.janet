@@ -3,12 +3,14 @@
 	:resources fonts))
 
 (defn base [title body-style & body]
+	(def font open-sans)
+	(def stylesheet (file 'output :css))
+	(def script (file 'script :js))
 	[(doctype :html5)
 		[:html ~{:lang en}
 			[:head 
 				[:title title]
-				[:meta ~{:charset utf-8}]
-				[:link ~{:rel stylesheet :href ,open-sans}]
-				[:link ~{:rel stylesheet :href ,(file 'output :css)}]]
-			[body-style body
-				[:script {:src (file 'script :js)}]]]])
+				[:meta {:charset 'utf-8}]
+				[:link {:href font :rel 'stylesheet}]
+				[:link {:href stylesheet :rel 'stylesheet}]]
+			[body-style body [:script {:src script}]]]])

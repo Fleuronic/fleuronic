@@ -3,8 +3,9 @@
 	:resources metrics))
 
 (def social-bar
-	(element :div ~(
+	(element :div
 		:absolute
-		:top 0 :left 0
-		:h full) bar-width 
+		origin
+		full-height
+		bar-width 
 		flex center))

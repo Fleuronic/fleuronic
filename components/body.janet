@@ -1,3 +1,3 @@
 (def default-body 
-	(element :body ~(
-		:font sans-serif)))
+	(element :body
+		:font 'sans-serif))

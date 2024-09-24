@@ -1,5 +1,6 @@
 (def hero 
-	(element :img ~(
+	(element :img.hero
 		:absolute
+		:hidden :lg:block
 		:bottom 0 :right 0
-		:h full)))
+		full-height))
