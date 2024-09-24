@@ -2,12 +2,12 @@
 (eval-string (slurp "dependencies.janet"))
 
 (using ~(
-	:util layout element color
+	:util element color
 	:resources colors strings
-	:components header body section
+	:components base header body section
 	:sections home))
   
 (let [title company]
-	(layout title default-body
+	(base title default-body
 		[:header header] 
 		[section home]))

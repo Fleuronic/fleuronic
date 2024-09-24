@@ -6,7 +6,7 @@
 	[toggle]
 	[navigation
 		(list nav-item
-			[:home :services :work :contact])
+			[:home :services :portfolio :contact])
 		[social-bar
   		(list icon [:facebook :twitter :instagram])
   		(email-icon email)]]])
