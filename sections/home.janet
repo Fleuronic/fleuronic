@@ -3,7 +3,7 @@
 	:resources strings))
 
 (def home [
-	[hero {:src "images/home-img.jpg"}]
+	[hero {:src "images/hero.jpg"}]
 	[content
 		[heading ;tagline]
 		[paragraph description]

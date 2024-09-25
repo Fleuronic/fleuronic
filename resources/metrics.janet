@@ -18,7 +18,7 @@
 (def scaled-down [:scale 50])
 (def logo-width [:w 44 :sm:w 52])
 (def bar-width [:w (custom 60 'px)])
-(def content-width [:max-w 'sm])
+(def content-width [:max-w 'lg])
 (def full-height [:h 'full])
 (def square-size [:size (custom 52 'px) :sm:size (custom 60 'px)])
 (def anchor [:bottom (custom 20 'px)])
