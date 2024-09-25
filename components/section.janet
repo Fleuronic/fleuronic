@@ -3,5 +3,5 @@
 (def section
 	(element :section
 		:h 'screen
-		padding 
+		section-padding 
 		flex))

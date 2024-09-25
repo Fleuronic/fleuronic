@@ -5,5 +5,5 @@
 		(index-of :lightened flags) -))
 	(string name "-" 
 		(if adjust (do
-			(def adjustment 200) 
+			(def adjustment 100) 
 			(adjust base adjustment)) base)))
