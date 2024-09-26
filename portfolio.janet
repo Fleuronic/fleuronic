@@ -3,11 +3,11 @@
 
 (using ~(
 	:util element color
-	:resources colors strings
+	:resources colors
 	:components base header body section
-	:sections home))
-  
+	:sections portfolio))
+	
 (let [title company]
 	(base title default-body
 		[:header header] 
-		[section home]))
+		[section portfolio]))

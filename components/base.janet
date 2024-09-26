@@ -11,7 +11,7 @@
 		(string/join (map string initial-scale) "=")] ", "))
 	
 	[(doctype :html5)
-		[:html ~{:lang en}
+		[:html {:lang 'en}
 			[:head 
 				[:title title]
 				[:meta {:charset 'utf-8}]
