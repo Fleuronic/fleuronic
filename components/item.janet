@@ -10,5 +10,6 @@
 
 (defn nav-item [page]
 	(def title (capitalize (string page)))
-	(def url (string page ".html"))
+	(def name (match page :home :index page))
+	(def url (string name ".html"))
 	[list-item [link {:href url} title]])
