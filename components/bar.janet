@@ -4,8 +4,7 @@
 
 (def social-bar
 	(element :div
-		:absolute
-		origin
+		:absolute origin
 		full-height
 		bar-width 
 		flex center))

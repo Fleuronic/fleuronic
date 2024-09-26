@@ -1,5 +1,4 @@
 (def content
 	(element :div
-		:relative
-		back
+		:relative back
 		content-width))

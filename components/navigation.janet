@@ -2,8 +2,7 @@
 
 (def navigation 
 	(element :div.navigation
-		:fixed
-		origin 'full front
+		:fixed origin 'full front
 		:size 'full
 		:bg 'white
 		flex center))

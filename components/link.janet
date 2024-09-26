@@ -14,6 +14,5 @@
 	
 (def corner-link
 	(element :a
-		:absolute
-		anchor
+		:absolute anchor
 		scaled-down))
