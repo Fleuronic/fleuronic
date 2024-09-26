@@ -8,4 +8,6 @@
 		(index-of :dark flags) over-dark-background)])
 
 (defn background-icon [& icons] ~(
-	:bg ,;icons icon-size no-repeat center))
+	:bg ,;icons 
+	icon-size 
+	no-repeat center))
