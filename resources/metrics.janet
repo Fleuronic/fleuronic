@@ -9,12 +9,14 @@
 (def back [:z 10])
 (def front [:z 20])
 (def frontmost [:z 30])
+
 (def inset [:p 12])
 (def indent [:mx 6 :my 2])
 (def margin [:my 6])
 (def section-padding [:px 6 :sm:px 14 :py 6])
 (def button-padding [:px 8 :py 3])
 (def gap [:space-y 3])
+
 (def scaled-down [:scale 50])
 (def logo-width [:w 44 :sm:w 52])
 (def bar-width [:w (custom 60 'px)])
