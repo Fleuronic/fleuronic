@@ -5,6 +5,6 @@
 (def social-bar
 	(element :div
 		:absolute origin
-		full-height
+		screen-height
 		bar-width 
 		flex center))

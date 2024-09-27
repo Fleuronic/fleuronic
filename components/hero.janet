@@ -1,6 +1,7 @@
-(def hero 
+(def hero [
 	(element :img.hero
 		:absolute
 		:hidden :lg:block
 		:bottom 0 :right 0
-		full-height))
+		screen-height)
+	{:src (path :images :hero :jpg)}])

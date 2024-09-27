@@ -1,9 +1,9 @@
 (using ~(
 	:resources metrics 
-	:util custom))
+	:util path))
 
-(def logo 
+(def logo [
 	(element :img.logo
-		:absolute
-		logo-width
-		indent))
+		:absolute inset
+		logo-width)
+	{:src (path :images :logo :png)}])

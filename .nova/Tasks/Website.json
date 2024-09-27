@@ -2,7 +2,7 @@
   "actions" : {
     "build" : {
       "enabled" : true,
-      "script" : "#!\/bin\/sh\njanet *.janet"
+      "script" : "#!\/bin\/sh\njanet index.janet\njanet services.janet\njanet portfolio.janet\njanet contact.janet"
     },
     "run" : {
       "enabled" : true,

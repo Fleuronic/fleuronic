@@ -4,10 +4,10 @@
 (using ~(
 	:util element color
 	:resources colors
-	:components base header body section
-	:sections contact))
+	:components base header body landing paragraph))
 	
 (let [title company]
 	(base title default-body
-		[:header header] 
-		[section contact]))
+		header 
+		[landing 
+			[paragraph "Contact"]]))

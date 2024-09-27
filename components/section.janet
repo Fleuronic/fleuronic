@@ -1,7 +1,4 @@
-(using ~(:styles center))
-
 (def section
-	(element :section
-		:h 'screen
-		section-padding 
+	(element :div
+		:absolute underneath
 		flex))

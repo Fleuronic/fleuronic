@@ -4,10 +4,10 @@
 (using ~(
 	:util element color
 	:resources colors
-	:components base header body section
-	:sections portfolio))
+	:components base header body landing paragraph))
 	
 (let [title company]
 	(base title default-body
-		[:header header] 
-		[section portfolio]))
+		header 
+		[landing 
+			[paragraph "Portfolio"]]))
