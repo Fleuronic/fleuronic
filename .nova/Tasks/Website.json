@@ -6,7 +6,7 @@
     },
     "run" : {
       "enabled" : true,
-      "script" : "#!\/bin\/sh\nspeakeasy\nnpx tailwindcss -i .\/css\/input.css -o .\/css\/output.css -c .\/js\/tailwind.config.js\nzip -r ..\/feuronic.zip css js images *.html"
+      "script" : "#!\/bin\/sh\nspeakeasy\nnpx tailwindcss -i .\/css\/input.css -o .\/css\/output.css -c .\/js\/tailwind.config.js\nzip -r ..\/fleuronic.zip css js images *.html"
     }
   }
 }
