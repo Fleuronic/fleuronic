@@ -4,7 +4,7 @@
 	(var trimmed-path @[])
 	(each entry (flatten entries)
 		(if (keyword? entry) (set key entry))
-		(cond 
+		(cond
 			(= key entry) (array/push path (string entry))
 			(array/push path (string key "/" entry ".janet"))))
 		(each component (reverse path)
