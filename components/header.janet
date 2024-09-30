@@ -2,7 +2,7 @@
 	:components logo toggle navigation list bar icon
 	:resources strings))
 
-(def header [:div 
+(def header [:div
 	logo toggle
 	[navigation
 		(list nav-item

@@ -1,6 +1,6 @@
 (using ~(:resources metrics))
 
-(def link 
+(def link
 	(element :a
 		:text extra-large over-light-background
 		:hover:text (color tint)
@@ -11,7 +11,7 @@
 	(element :a
 		:inline-block
 		scaled-down))
-	
+
 (def corner-link
 	(element :a
 		:absolute anchor

@@ -6,5 +6,5 @@
 	(element :div
 		:absolute origin
 		screen-height
-		bar-width 
+		bar-width
 		flex center))

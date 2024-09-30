@@ -1,5 +1,5 @@
 (using ~(
-	:resources metrics 
+	:resources metrics
 	:util path))
 
 (def logo [

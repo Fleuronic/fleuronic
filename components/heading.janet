@@ -1,5 +1,5 @@
-(def heading 
+(def heading
 	(element :h
-		:text large 
+		:text large
 		:font 'medium
 		:leading 'relaxed))

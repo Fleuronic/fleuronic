@@ -7,5 +7,5 @@
 		:fixed :top 0 :right 0 frontmost
 		square-size
 		(background :dark)
-		(background-icon 'toggle 'close) 
+		(background-icon 'toggle 'close)
 		pointer)])

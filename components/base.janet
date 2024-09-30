@@ -9,10 +9,10 @@
 	(def viewport (string/join [
 		(string/join (map string device-width) "=")
 		(string/join (map string initial-scale) "=")] ", "))
-	
+
 	[(doctype :html5)
 		[:html {:lang 'en}
-			[:head 
+			[:head
 				[:title title]
 				[:meta {:charset 'utf-8}]
 				[:link {:href font :rel 'stylesheet}]

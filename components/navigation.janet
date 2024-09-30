@@ -1,6 +1,6 @@
 (using ~(:styles flex center))
 
-(def navigation 
+(def navigation
 	(element :div.navigation
 		:fixed origin 'full front
 		:size 'full

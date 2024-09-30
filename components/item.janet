@@ -2,7 +2,7 @@
 	:components link
 	:util capitalize))
 
-(def list-item 
+(def list-item
 	(element :li
 		:relative
 		:text 'center
