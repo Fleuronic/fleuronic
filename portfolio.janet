@@ -5,9 +5,9 @@
 	:util element color
 	:resources colors
 	:components base header body landing paragraph))
-	
+
 (let [title company]
 	(base title default-body
-		header 
-		[landing 
+		header
+		[landing
 			[paragraph "Portfolio"]]))

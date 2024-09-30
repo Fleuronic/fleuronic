@@ -4,18 +4,17 @@
 (using ~(
 	:util path element color
 	:resources colors strings
-	:components 
-		base body 
-		header 
-		landing hero content 
-		heading paragraph button))
-  
-(let [title company]
-	(base title default-body
+	:components
+		base body
 		header
-		[landing 
-			hero
-			[content
-				[heading ;tagline]
-				[paragraph description]
-				(button prompt :to :contact)]]))
+		landing hero content
+		heading paragraph button))
+
+(base company default-body
+	header
+	[landing
+		[content
+			[heading ;tagline]
+			[paragraph description]
+			(button prompt :to :contact)]
+		hero])
