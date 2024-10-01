@@ -1,6 +1,4 @@
-(using ~(
-	:styles background pointer
-	:resources metrics))
+(using ~(:styles background pointer))
 
 (def toggle [
 	(element :div.toggle

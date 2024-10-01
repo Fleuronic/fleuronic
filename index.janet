@@ -6,8 +6,8 @@
 	:resources colors strings
 	:components
 		base body
-		header
-		landing hero content
+		header landing
+		hero content
 		heading paragraph button))
 
 (base company default-body

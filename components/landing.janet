@@ -1,5 +1,5 @@
 (def landing
 	(element :div
 		screen-height
-		landing-padding
+		content-padding
 		flex))

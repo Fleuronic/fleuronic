@@ -1,5 +1,6 @@
 (using ~(:util custom))
 
+(def small 'medium)
 (def medium 'lg)
 (def large "3xl")
 (def extra-large (custom 2 'rem))
@@ -13,10 +14,9 @@
 (def frontmost [:z 30])
 
 (def margin [:my 6])
-(def gap [:space-y 3])
-(def landing-padding [:px 8 :sm:px 14 :py 6])
-(def section-padding [:px 4 :sm:px 10 :py 12])
-(def button-padding [:px 8 :py 3])
+(def spacing [:space-y 3])
+(def item-padding [:px 8 :py 3])
+(def content-padding [:px 8 :sm:px 14 :py 6])
 
 (def scaled-down [:scale 50])
 (def logo-width [:w 44 :sm:w 52])

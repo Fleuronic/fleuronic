@@ -1,7 +1,7 @@
 (defn button [title &named to] [
 	(element :a
 		:inline-block
-		button-padding
+		item-padding
 		(background :dark)
 		:rounded 'full
 		:no-underline

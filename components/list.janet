@@ -1,3 +1,3 @@
 (defn list [item items] [
-	(element :ul gap)
+	(element :ul spacing)
 		(map item items)])

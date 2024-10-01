@@ -1,6 +1,4 @@
-(using ~(:resources metrics))
-
 (def paragraph
 	(element :p
-		:text 'medium
+		:text medium
 		margin))
