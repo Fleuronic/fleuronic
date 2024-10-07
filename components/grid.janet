@@ -1,6 +1,11 @@
-(def grid
+(using ~(
+	:components card
+	:util from))
+
+(defn grid [content & cards] [
 	(element :div
-		:mt 12
-		:text 'center
-		:grid-cols 1 :sm:grid-cols 2
-		:grid :gap 10))
+		top-margin
+		columns grid-gap
+		:text 'center)
+	(map card ;(from cards content
+		:name :text))])

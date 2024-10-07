@@ -1,6 +1,4 @@
-(using ~(
-	:resources metrics
-	:util path))
+(using ~(:util path))
 
 (def logo [
 	(element :img.logo

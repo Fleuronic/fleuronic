@@ -1,5 +1,3 @@
-(using ~(:resources metrics))
-
 (def link
 	(element :a
 		:text extra-large over-light-background

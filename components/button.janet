@@ -7,4 +7,4 @@
 		:no-underline
 		pointer)
 	{:href (path to :html)}
-	prompt])
+	title])

@@ -1,5 +1,5 @@
 (using ~(
-	:components logo toggle navigation list bar icon
+	:components logo toggle navigation list sidebar icon
 	:resources strings))
 
 (def header [:div
@@ -7,6 +7,6 @@
 	[navigation
 		(list nav-item
 			[:home :services :portfolio :contact])
-		[social-bar
+		[sidebar
 			(list icon [:facebook :twitter :instagram])
 			(email-icon email)]]])

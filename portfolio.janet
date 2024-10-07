@@ -4,7 +4,8 @@
 (using ~(
 	:util element color
 	:resources colors
-	:components base header body landing paragraph))
+	:text body paragraph
+	:components base header landing))
 
 (let [title company]
 	(base title default-body

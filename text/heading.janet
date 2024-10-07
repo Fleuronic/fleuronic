@@ -1,3 +1,5 @@
+(using ~(:resources metrics))
+
 (def heading
 	(element :h
 		:text large

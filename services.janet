@@ -4,39 +4,32 @@
 (using ~(
 	:util element color
 	:resources colors
-	:components
-		base body
-		header section
-		heading paragraph
-		grid card tag caption))
+	:text body heading paragraph
+	:components base header section grid))
 
-(base company default-body
-	header
-	[section
-		[heading "Here’s what we can do."]
-		[paragraph ```Duis sit laborum quis ipsum mollit pariatur non id nulla. Deserunt consequat elit ullamco.
-		Sint sit sit cillum reprehenderit. Nisi anim fugiat et laborum quis ea officia elit. Incididunt ea
-		pariatur culpa culpa amet ad ipsum esse laboris eiusmod nisi. Consectetur commodo esse amet pariatur
-		culpa nisi ut quis cupidatat tempor enim irure cillum adipisicing. Nulla dolor nostrud pariatur tempor
-		tempor nulla.```]
-		[grid
-			[card
-				[:div.my-6 [:img.max-w-24 {:src (path :images 'ios :png)}]]
-				[tag "iOS Development"]
-				[caption ```Labore nulla culpa ea excepteur qui aliqua. Officia cupidatat Lorem tempor sint irure do
-				incididunt esse aliqua tempor ad.```]]
-			[card
-				[:div.my-6 [:img.max-w-24 {:src (path :images 'mac :png)}]]
-				[tag "Mac Development"]
-				[caption ```Labore nulla culpa ea excepteur qui aliqua. Officia cupidatat Lorem tempor sint irure do
-				incididunt esse aliqua tempor ad.```]]
-			[card
-				[:div.my-6 [:img.max-w-24 {:src (path :images 'ios :png)}]]
-				[tag "iOS Development"]
-				[caption ```Labore nulla culpa ea excepteur qui aliqua. Officia cupidatat Lorem tempor sint irure do
-				incididunt esse aliqua tempor ad.```]]
-			[card
-				[:div.my-6 [:img.max-w-24 {:src (path :images 'mac :png)}]]
-				[tag "Mac Development"]
-				[caption ```Labore nulla culpa ea excepteur qui aliqua. Officia cupidatat Lorem tempor sint irure do
-				incididunt esse aliqua tempor ad.```]]]])
+(let [
+	title company
+	tagline "Services we offer"
+	description ```Fleuronic has a proven track record in the following areas. We  apply a thoughtful
+	and rigorous approach to engineering up and down the stack, in codebases both established and yet
+	to be, to build something people love.```
+	content {
+		:ios {
+			:name "iOS Development"
+			:text "Fast, responsive, native mobile apps built with Swift, UIKit, and SwiftUI."}
+		:mac {
+			:name "Mac Development"
+			:text "Desktop class software, built natively for macOS with AppKit and Catalyst."}
+		:backend {
+			:name "Backend Development"
+			:text "Infrastucture to power your app, leveraging REST or GraphQL APIs to access data."}
+		:perf {
+			:name "Performance and Analytics"
+			:text "Boop"}}]
+
+	(base title default-body
+		header
+		[section
+			[heading tagline]
+			[paragraph description]
+			(grid content :ios :mac :backend :perf)]))

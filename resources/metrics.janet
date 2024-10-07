@@ -1,6 +1,6 @@
 (using ~(:util custom))
 
-(def small 'medium)
+(def caption 'medium)
 (def medium 'lg)
 (def large "3xl")
 (def extra-large (custom 2 'rem))
@@ -14,9 +14,12 @@
 (def frontmost [:z 30])
 
 (def margin [:my 6])
+(def top-margin [:mt 12])
+(def bottom-margin [:mb 4])
 (def spacing [:space-y 3])
 (def item-padding [:px 8 :py 3])
 (def content-padding [:px 8 :sm:px 14 :py 6])
+(def grid-gap [:grid :gap 10])
 
 (def scaled-down [:scale 50])
 (def logo-width [:w 44 :sm:w 52])
@@ -24,5 +27,6 @@
 (def content-width [:max-w 'lg])
 (def screen-height [:h 'screen])
 (def square-size [:size (custom 52 'px) :sm:size (custom 60 'px)])
+(def columns [:grid-cols 1 :sm:grid-cols 2])
 (def device-width [:width 'device-width])
 (def initial-scale [:initial-scale 1])

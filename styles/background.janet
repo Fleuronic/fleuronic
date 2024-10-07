@@ -1,5 +1,3 @@
-(using ~(:resources metrics))
-
 (defn background [& flags] [
 	:bg (color tint)
 	:hover:bg (color tint :darkened)
