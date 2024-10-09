@@ -1,8 +1,8 @@
-(def link
+(def page-link
 	(element :a
-		:text extra-large over-light-background
+		:text page-name
+		:text over-light-background
 		:hover:text (color tint)
-		:font 'light
 		:no-underline))
 
 (def site-link

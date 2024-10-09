@@ -9,3 +9,8 @@
 	:bg ,;icons
 	icon-size
 	no-repeat center))
+
+(def opaque ~(:bg white))
+(def pill ~(:rounded full))
+(def roundrect ~(:rounded lg))
+(def hover-shadow ~(:hover:shadow md))

@@ -1,0 +1,1 @@
+(def centered ~(:text center))

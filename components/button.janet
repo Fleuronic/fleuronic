@@ -2,9 +2,7 @@
 	(element :a
 		:inline-block
 		item-padding
-		(background :dark)
-		:rounded 'full
+		pill (background :dark)
 		:no-underline
 		pointer)
-	{:href (path to :html)}
-	title])
+	{:href (path to :html)} title])

@@ -8,5 +8,5 @@
 
 (defn feature [id] [
 	(element :div margin) [
-		(element :img :max-w 24)
+		(element :img feature-width)
 		{:src (path :images id :png)}]])

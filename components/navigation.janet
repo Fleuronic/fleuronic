@@ -1,8 +1,7 @@
-(using ~(:styles flex center))
+(using ~(:styles flex screen))
 
 (def navigation
 	(element :div.navigation
-		:fixed origin 'full front
-		:size 'full
-		:bg 'white
-		flex center))
+		(flex 'center)
+		modal
+		opaque))

@@ -4,8 +4,7 @@
 (using ~(
 	:util path element color
 	:resources colors strings
-	:text body content heading paragraph
-	:components base header landing image button))
+	:components base header layout image button))
 
 (let [
 	title company
@@ -14,7 +13,7 @@
 	description ```With twelve years’ professional iOS development experience from startups
 	to Fortune 500 companies, I started Fleuronic LLC, a single person development shop, in 2019.```]
 
-	(base title default-body
+	(base title default
 		header
 		[landing
 			[content

@@ -1,5 +1,6 @@
 (using ~(
 	:util file
+	:styles text
 	:resources metrics fonts))
 
 (defn base [title body-style & body]

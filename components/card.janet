@@ -1,21 +1,10 @@
-(using ~(:components image))
+(using ~(:components layout image))
 
-(defn card [id name text]
-	(let [
-		card (element :div
-			:padding item-padding
-			:rounded 'xl
-			:hover:shadow 'md)
-		tag (element :h
-			:text medium
-			:font 'medium
-			:leading 'relaxed)
-		caption (element :p
-			bottom-margin
-			:text caption
-			:leading 'relaxed)]
-
-		[card
-			(feature id)
-			[tag name]
-			[caption text]]))
+(defn card [id name text] [
+	(element :div
+		:padding item-padding
+		roundrect
+		hover-shadow)
+	(feature id)
+	[tag name]
+	[caption text]])

@@ -4,8 +4,7 @@
 (using ~(
 	:util element color
 	:resources colors
-	:text body heading paragraph
-	:components base header section grid))
+	:components base header layout grid))
 
 (let [
 	title company
@@ -27,7 +26,7 @@
 			:name "Analytics and Monitoring"
 			:text "Visibility into how your users use your app — and how well it works for them."}}]
 
-	(base title default-body
+	(base title default
 		header
 		[section
 			[heading tagline]

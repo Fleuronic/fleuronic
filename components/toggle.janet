@@ -1,4 +1,4 @@
-(using ~(:styles background pointer))
+(using ~(:styles background cursor))
 
 (def toggle [
 	(element :div.toggle

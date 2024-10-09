@@ -1,15 +1,18 @@
 (using ~(
 	:components link
+	:styles alignment bullet
 	:util capitalize))
 
 (def list-item
 	(element :li
 		:relative
-		:text 'center
-		:list 'none))
+		centered
+		unbulleted))
 
 (defn nav-item [page]
-	(def title (capitalize (string page)))
-	(def name (match page :home :index page))
-	(def url (string name "." :html))
-	[list-item [link {:href url} title]])
+	(let [
+		title (capitalize (string page))
+		name (match page :home :index page)
+		url (string name "." :html)]
+
+		[list-item [page-link {:href url} title]]))

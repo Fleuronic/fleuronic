@@ -1,14 +1,9 @@
 (using ~(:util custom))
 
-(def caption 'medium)
-(def medium 'lg)
-(def large "3xl")
-(def extra-large (custom 2 'rem))
-
 (def origin [:top 0 :left 0])
 (def inset [:top 2 :left 6])
 (def underneath [:top 28])
-(def anchor [:bottom (custom 20 'px)])
+(def anchor [:bottom (custom 20 :px)])
 (def back [:z 10])
 (def front [:z 20])
 (def frontmost [:z 30])
@@ -21,12 +16,16 @@
 (def content-padding [:px 8 :sm:px 14 :py 6])
 (def grid-gap [:grid :gap 10])
 
-(def scaled-down [:scale 50])
-(def logo-width [:w 44 :sm:w 52])
-(def bar-width [:w (custom 60 'px)])
 (def content-width [:max-w 'lg])
-(def screen-height [:h 'screen])
-(def square-size [:size (custom 52 'px) :sm:size (custom 60 'px)])
-(def columns [:grid-cols 1 :sm:grid-cols 2])
+(def logo-width [:w 44 :sm:w 52])
+(def bar-width [:w (custom 60 :px)])
+(def feature-width [:max-w 24])
 (def device-width [:width 'device-width])
+(def screen-height [:h 'screen])
+(def square-size [:size (custom 52 :px) :sm:size (custom 60 :px)])
+
 (def initial-scale [:initial-scale 1])
+(def scaled-down [:scale 50])
+
+(defn columns [count] [
+	:grid-cols (dec count) :sm:grid-cols count])

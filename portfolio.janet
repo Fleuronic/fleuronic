@@ -4,11 +4,10 @@
 (using ~(
 	:util element color
 	:resources colors
-	:text body paragraph
-	:components base header landing))
+	:components base header layout))
 
 (let [title company]
-	(base title default-body
+	(base title default
 		header
 		[landing
 			[paragraph "Portfolio"]]))

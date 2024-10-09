@@ -1,6 +1,6 @@
 (using ~(
-	:components logo toggle navigation list sidebar icon
-	:resources strings))
+	:resources strings
+	:components logo toggle navigation list sidebar icon))
 
 (def header [:div
 	logo toggle

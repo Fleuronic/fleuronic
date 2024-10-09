@@ -1,1 +1,3 @@
-(def flex ~(:flex :items center))
+(defn flex [alignment] ~(
+	:flex :items center
+	:justify ,alignment))

@@ -1,0 +1,1 @@
+(def unbulleted ~(:list none))
