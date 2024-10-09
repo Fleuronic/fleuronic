@@ -9,7 +9,7 @@
 
 (let [
 	title company
-	tagline "Services we offer"
+	tagline "Here’s where we come in."
 	description ```Fleuronic has a proven track record in the following areas. We  apply a thoughtful
 	and rigorous approach to engineering up and down the stack, in codebases both established and yet
 	to be, to build something people love.```
@@ -24,8 +24,8 @@
 			:name "Backend Development"
 			:text "Infrastucture to power your app, leveraging REST or GraphQL APIs to access data."}
 		:perf {
-			:name "Performance and Analytics"
-			:text "Boop"}}]
+			:name "Analytics and Monitoring"
+			:text "Visibility into how your users use your app — and how well it works for them."}}]
 
 	(base title default-body
 		header
