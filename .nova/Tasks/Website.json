@@ -4,9 +4,13 @@
       "enabled" : true,
       "script" : "#!\/bin\/sh\njanet index.janet\njanet services.janet\njanet portfolio.janet\njanet contact.janet"
     },
+    "clean" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nspeakeasy\nnpx tailwindcss -i .\/css\/input.css -o .\/css\/output.css -c .\/js\/tailwind.config.js\nzip -r ..\/fleuronic.zip css\/output.css js\/script.js images *.html"
+    },
     "run" : {
       "enabled" : true,
-      "script" : "#!\/bin\/sh\nspeakeasy\nnpx tailwindcss -i .\/css\/input.css -o .\/css\/output.css -c .\/js\/tailwind.config.js\nzip -r ..\/fleuronic.zip css js images *.html"
+      "script" : "#!\/bin\/sh\nspeakeasy\nnpx tailwindcss -i .\/css\/input.css -o .\/css\/output.css -c .\/js\/tailwind.config.js"
     }
   }
 }
