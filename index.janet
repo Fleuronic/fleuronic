@@ -19,4 +19,4 @@
 			[content
 				[heading ;tagline]
 				[paragraph description]
-				(button prompt :to :contact)] hero]))
+				(button prompt :to :portfolio)] hero]))
